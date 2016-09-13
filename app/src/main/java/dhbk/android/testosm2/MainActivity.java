@@ -9,6 +9,8 @@ import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
+import dhbk.android.testosm2.customWindow.NameOfStreetOverlay;
+
 public class MainActivity extends AppCompatActivity {
     private MapView map;
 
@@ -36,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 9/10/16 dont want to show a marker for windows, show a info windows
     private void addCustomOverlay() {
-//        NameOfStreetOverlay startMarker = new NameOfStreetOverlay(map);
-        Marker startMarker = new Marker(map);
+        NameOfStreetOverlay startMarker = new NameOfStreetOverlay(map);
+//        Marker startMarker = new Marker(map);
         startMarker.setPosition(new GeoPoint(48.13, -1.63));
         startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
 
