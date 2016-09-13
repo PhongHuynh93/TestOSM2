@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!--todo - change the title color-->
             <TextView
                 android:id="@+id/bubble_title"
                 android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
                 android:layout_weight="1"
                 android:maxEms="17"
                 android:text="Title"
-                android:textColor="#000000"/>
+                android:textColor="@color/colortext"/>
 
             <Button
                 android:id="@+id/bubble_moreinfo"
@@ -58,7 +59,7 @@
             android:layout_height="wrap_content"
             android:maxEms="17"
             android:text="Address"
-            android:textColor="#000000"
+            android:textColor="@color/colortext"
             android:textSize="10dp"
             android:visibility="gone"/>
     </LinearLayout>
