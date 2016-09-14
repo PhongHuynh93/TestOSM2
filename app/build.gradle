@@ -83,4 +83,8 @@ dependencies {
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.squareup.okhttp:okhttp:2.6.0'
     compile project(':osmbonuspack_v5.8.1')
+
+//    font
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+
 }

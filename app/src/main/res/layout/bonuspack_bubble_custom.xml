@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/tim"
+    android:background="@drawable/message"
     android:orientation="horizontal">
 
     <ImageView
@@ -15,24 +15,28 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="5dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!--todo - change the title color-->
+            <!--todo - change the title color, change the position of the text inside of this -->
             <TextView
                 android:id="@+id/bubble_title"
+                fontPath="fonts/System San Francisco Display Regular.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:maxEms="17"
                 android:text="Title"
-                android:textColor="@color/colortext"/>
+                android:textSize="19sp"
+                android:paddingTop="10dp"
+                android:paddingEnd="7dp"
+                android:textColor="@color/colortext"
+                android:paddingStart="7dp"/>
 
             <Button
                 android:id="@+id/bubble_moreinfo"

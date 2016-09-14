@@ -1,7 +1,8 @@
 package dhbk.android.testosm2;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
@@ -10,6 +11,7 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
 import dhbk.android.testosm2.customWindow.NameOfStreetOverlay;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {
     private MapView map;
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         addCustomOverlay();
     }
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     // TODO: 9/10/16 dont want to show a marker for windows, show a info windows
     private void addCustomOverlay() {
         NameOfStreetOverlay startMarker = new NameOfStreetOverlay(map);
@@ -49,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
         // make the instruction table
 //        startMarker.setIcon(getResources().getDrawable(R.mipmap.ic_launcher));
         // TODO: 9/13/16 change the title of name of street
-        startMarker.setTitle("Đường Lý Thường Kiệt");
+        startMarker.setTitle("Đường Lý thuong Kiệt");
     }
 }

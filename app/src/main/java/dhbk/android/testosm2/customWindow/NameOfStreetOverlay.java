@@ -65,7 +65,7 @@ public class NameOfStreetOverlay extends TestOverlayWithIW {
         this.mTextLabelBackgroundColor = -1;
         this.mTextLabelForegroundColor = -16777216; // it has an alpha color
         // FIXME: 9/10/16 change the textsize in the info windows
-        this.mTextLabelFontSize = 15;
+        this.mTextLabelFontSize = 20;
 //        this.mTextLabelFontSize = 24;
         this.resource = mapView.getContext().getResources();
         this.mBearing = 0.0F;
